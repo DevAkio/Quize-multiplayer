@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Multiplayer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Quiz Multiplayer</h1>
+    <div id="lobby">
+      <button onclick="createRoom()">Criar Sala</button>
+      <input id="roomCode" placeholder="Código da sala" />
+      <button onclick="joinRoom()">Entrar na Sala</button>
+    </div>
+
+    <div id="game" class="hidden">
+      <div id="questionBox"></div>
+      <div id="options"></div>
+    </div>
+
+    <div id="result" class="hidden"></div>
+  </div>
+
+  <script src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
